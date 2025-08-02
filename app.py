@@ -49,7 +49,7 @@ target_time = datetime.combine(date_input, datetime.min.time()) + timedelta(hour
 
 # === MAIN LOGIC ===
 if st.sidebar.button("🔮 Start Prediction"):
-    st.title("🌫️ Taipei Air Quality Forecast")
+    st.title("Taipei Air Quality Forecast")
     st.subheader(f"{sitename} — Forecast up to {target_time.strftime('%Y-%m-%d %H:00')}")
 
     site_data = data[data["sitename"] == sitename].sort_values("datetime").copy()
