@@ -111,15 +111,7 @@ joblib.dump(scaler, "model/scaler.pkl")
 ]
 ```
 
-- 其中 `pm10_lag1`、`lag2`、`lag3`：為過去三個小時的 PM10 值  
-- `pm10_roll3`：為三小時移動平均值  
-- `PM2.5` 作為其中一項輸入特徵輔助預測
-
-### 🎯 預測目標
-
-```python
-target = "PM10"
-```
+- 目標變數：`PM10`
 
 ---
 
