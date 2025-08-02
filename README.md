@@ -55,16 +55,9 @@
 
 ---
 
-### 🚀 部署方式簡介
-
-本專案使用 [Streamlit Cloud](https://streamlit.io/cloud) 雲端平台進行部署，整合模型推論、資料視覺化與互動操作。部署後的網址可直接供公眾存取
-
----
-
 ## 📁 專案架構與流程
 
 ```
-.
 ├── src/                 # 原始碼
 │   ├── fetch_data.py      # 從 API 下載並整理資料
 │   ├── preprocessed.py    # 資料前處理與特徵工程
