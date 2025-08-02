@@ -25,9 +25,6 @@
 - **API Endpoint**:  
   `https://data.moenv.gov.tw/api/v2/aqx_p_136`
 
-- **API Key**:  
-  `1da6204b-e100-4b0a-b565-d13dbb6b1468`
-
 - **主要欄位**:
   | 欄位名稱       | 說明             |
   | -------------- | ---------------- |
