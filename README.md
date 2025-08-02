@@ -1,4 +1,4 @@
-# 🌫️ Taipei PM2.5 & PM10 Prediction Project
+# Taipei PM2.5 & PM10 Prediction Project
 
 本專案旨在預測台北市的 PM2.5 與 PM10 空氣品質指標。  
 透過環境部 API 取得空品監測數據，經過資料清理、特徵工程與多種模型訓練後，選出最佳模型以供後續部署與視覺化應用。
