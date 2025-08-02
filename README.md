@@ -65,7 +65,22 @@ df = df.fillna(df.median(numeric_only=True))
 
 4. **特徵工程（Feature Engineering）**
 
-- 為了提升模型對時間序列中 PM2.5 和 PM10 變化趨勢的理解與預測能力，我們設計了以下幾類特徵：
+為了提升模型對時間序列中 PM2.5 和 PM10 變化趨勢的理解與預測能力，我們設計了以下幾類特徵：
+
+---
+
+#### 📌 滯後特徵簡介（What are Lag Features?）
+
+在時間序列建模中，**滯後特徵（Lag Features）** 是指使用「前一個或多個時間點」的觀測值作為目前時間點的輸入特徵。這種方式能幫助模型捕捉時間上的延續性與趨勢，例如「昨天的空氣品質會影響今天的空氣品質」。
+
+舉例來說：
+- `lag1` 代表的是 t-1 時刻的觀測值，用於預測 t 時刻。
+- `lag3` 則是 t-3 的值，用於了解三小時前的狀況對現在的影響。
+- `roll3` 是前 3 小時的平均值，有助於平滑突變值，反映短期趨勢。
+
+滯後特徵是許多時間序列預測模型（如 ARIMA、XGBoost、LSTM）中的基礎特徵類型。
+
+---
 
 #### 時間特徵（Temporal Features）
 - `hour`：從時間戳中提取的「小時」資訊，幫助模型捕捉日內變化週期（例如通勤時段污染上升）。
@@ -74,7 +89,7 @@ df = df.fillna(df.median(numeric_only=True))
 ```python
 df["hour"] = df["datetime"].dt.hour
 df["dayofweek"] = df["datetime"].dt.dayofweek
-
+```
 
 5. **標準化**
 ```python
