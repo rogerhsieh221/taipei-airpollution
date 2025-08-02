@@ -63,15 +63,18 @@ df = df.fillna(method="ffill")
 df = df.fillna(df.median(numeric_only=True))
 ```
 
-4. **特徵工程**
-- 時間特徵：`hour`, `dayofweek`
-- 滯後特徵（PM2.5 與 PM10 都會產生）：`lag1`, `lag2`, `lag3`, `roll3`
+4. **特徵工程（Feature Engineering）**
+
+為了提升模型對時間序列中 PM2.5 和 PM10 變化趨勢的理解與預測能力，我們設計了以下幾類特徵：
+
+#### 時間特徵（Temporal Features）
+- `hour`：從時間戳中提取的「小時」資訊，幫助模型捕捉日內變化週期（例如通勤時段污染上升）。
+- `dayofweek`：提取星期幾（0 = 星期一，6 = 星期日），捕捉一週中的變化規律，例如週末與平日的空氣品質差異。
+
 ```python
 df["hour"] = df["datetime"].dt.hour
 df["dayofweek"] = df["datetime"].dt.dayofweek
-df["pm2.5_lag1"] = df["PM2.5"].shift(1)
-df["pm10_lag1"] = df["PM10"].shift(1)
-```
+
 
 5. **標準化**
 ```python
