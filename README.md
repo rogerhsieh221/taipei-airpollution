@@ -159,10 +159,10 @@ joblib.dump(scaler, "model/scaler.pkl")
 # PM2.5 預測流程
 python src/fetch_data.py
 python src/preprocessed.py
-python src/train_model.py
+python src/train_model_pm25.py
 
 # PM10 預測流程
-python src/train_pm10_model.py
+python src/train_model_pm10.py
 ```
 
 ### 🔍 產出結果
