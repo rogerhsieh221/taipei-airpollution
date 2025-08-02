@@ -65,7 +65,7 @@ df = df.fillna(df.median(numeric_only=True))
 
 4. **特徵工程（Feature Engineering）**
 
-為了提升模型對時間序列中 PM2.5 和 PM10 變化趨勢的理解與預測能力，我們設計了以下幾類特徵：
+- 為了提升模型對時間序列中 PM2.5 和 PM10 變化趨勢的理解與預測能力，我們設計了以下幾類特徵：
 
 #### 時間特徵（Temporal Features）
 - `hour`：從時間戳中提取的「小時」資訊，幫助模型捕捉日內變化週期（例如通勤時段污染上升）。
