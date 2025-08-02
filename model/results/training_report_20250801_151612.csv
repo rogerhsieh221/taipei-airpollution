@@ -1,0 +1,8 @@
+model,MAE,RMSE
+ARIMA,1.75,1.8
+Linear Regression,4.85,5.85
+Random Forest,3.54,3.59
+XGBoost,5.5,5.7
+LightGBM,2.88,3.04
+SVR,3.41,3.52
+KNN,4.17,4.17

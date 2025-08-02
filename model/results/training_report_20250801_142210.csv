@@ -1,0 +1,9 @@
+model,MAE,RMSE,MAPE
+ARIMA,0.0,0.0,
+XGBoost,3.0,3.0,53.72
+LightGBM,3.41,3.41,64.19
+Markov Chain,4.0,4.0,133.33
+Linear Regression,inf,inf,inf
+Random Forest,inf,inf,inf
+SVR,inf,inf,inf
+KNN,inf,inf,inf

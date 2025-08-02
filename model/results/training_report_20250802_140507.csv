@@ -1,0 +1,9 @@
+model,Test MAE,Test MSE,Test RMSE,Train MAE,Train MSE,Train RMSE
+Linear Regression,0.0,0.0,0.0,0.0,0.0,0.0
+XGBoost,2.04,7.09,2.66,0.0,0.0,0.0
+Random Forest,2.1,8.36,2.89,0.88,1.3,1.14
+SVR,2.26,8.6,2.93,0.28,0.42,0.65
+LightGBM,2.42,9.65,3.11,1.43,3.25,1.8
+KNN,2.49,9.68,3.11,0.0,0.0,0.0
+ARIMA,2.85,13.75,3.71,,,
+Markov Chain,4.53,28.63,5.35,,,
