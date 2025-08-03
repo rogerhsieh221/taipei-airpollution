@@ -61,8 +61,8 @@
 ├── src/                 # 原始碼
 │   ├── fetch_data.py      # 從 API 下載並整理資料
 │   ├── preprocessed.py    # 資料前處理與特徵工程
-│   └── train_model.py     # 訓練 PM2.5 模型
-│   └── train_pm10_model.py# 訓練 PM10 模型
+│   └── train_model_pm2.5.py     # 訓練 PM2.5 模型
+│   └── train_model_pm10.py# 訓練 PM10 模型
 ├── data/                # 原始與處理後資料
 ├── model/               # Scaler、模型與訓練報告
 ```
