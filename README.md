@@ -340,12 +340,3 @@ python src/train_model_pm10.py
    - 導入時序深度學習模型（如 Transformer、Temporal Fusion Transformer）。
    - 結合時空圖神經網路（ST-GNN）處理空間依賴性。
 
----
-
-## 📌 備註
-
-- 若預處理後資料少於 20 筆，將跳出提醒並中止訓練
-- 預設排除線性模型儲存（僅作為 baseline 比較）
-- 所有報告含訓練與測試集 MAE、MSE、RMSE 指標
-
----
