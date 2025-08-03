@@ -297,7 +297,6 @@ python src/train_model_pm10.py
 | `model/results/training_report_*.csv`         | 模型評估報告（按 MAE 排序）     |
 
 ---
----
 
 ## ⚠️ 資料與模型限制說明
 
